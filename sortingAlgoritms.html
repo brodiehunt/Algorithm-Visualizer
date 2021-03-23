@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://use.fontawesome.com/52f5e176d7.js"></script> 
+    <link rel='stylesheet' href='css/sorting.css' type="text/css">
+    <link rel="stylesheet" href='css/all.min.css'>   
+    <meta charset="utf-8">
+    <meta name="description" content="The Algorithm Visualizer website provides
+      visualizations of common sorting and pathfinding algorithms.">
+    <title>Sorting Visualizer</title>
+
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo-container">
+        <div class="logo">
+          Sorting Visualizer
+        </div>
+      </div>
+      <div class="nav-vertical-line">
+
+      </div>
+      <ul>
+        <li>
+          <span class="algorithm-setting">Bubble Sort</span><span><i class="fas fa-lg fa-caret-down"></i></span>
+          <div class='dropdown-menu'>
+            <div id="algorithm-setting"  class="bubble menu-item">Bubble Sort</div>
+            <div id="algorithm-setting"  class='insertion menu-item'>Insertion Sort</div>
+            <div id="algorithm-setting"  class="selection menu-item">Selection Sort</div>
+          </div>
+        </li>
+        <li>
+          <span class="speed">Slow</span><span> <i class="fas fa-lg fa-caret-down"></i></span>
+          <div class='dropdown-menu'>
+            <div id="speed" class="slow menu-item">Slow</div>
+            <div id="speed" class='medium menu-item'>Medium</div>
+            <div id="speed" class='fast menu-item'>Fast</div>
+          </div>
+        </li>
+        <li>
+          <span class="container-size">50 Bars</span><span><i class="fas fa-lg fa-caret-down"></i></span>
+          <div class='dropdown-menu'>
+            <div id="container-size" class="50-bars menu-item">50 Bars</div>
+            <div id="container-size" class='100-bars menu-item'>100 Bars</div>
+            <div id="container-size" class='500-bars menu-item'>200 Bars</div>
+          </div>
+        </li>
+        <li id="run"><strong>Start</strong></li>
+      </ul>
+      <div class="pathfinding-link-container">
+        <div class="pathfinding-link">
+            Path Finding Visualizer
+        </div>
+      </div>
+    </nav>
+    <div class="div-box-container">
+
+    </div>
+    <div class="runtime-container">
+
+    </div>
+    <script src="javascript/sortingAlgorithms/bubbleSort.js"></script>
+    <script src="javascript/sortingAlgorithms/insertionSort.js"></script>
+    <script src="javascript/sortingAlgorithms/selectionSort.js"></script>
+    <script src="javascript/sortingAlgorithms/sortingIndex.js"></script>
+  </body>
+</html>

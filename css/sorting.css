@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0px 5px;
+  background-color: hsl(222, 20%, 35%);
+  position: relative;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  background-color: hsl(222, 20%, 45%);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.pathfinding-link-container {
+  position: absolute;
+  right: 20px;
+  padding: 10px;
+  border-radius: 3px;
+
+  background-color: white;
+  color: hsl(222, 20%, 25%);
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.pathfinding-link-container:hover {
+  background-color: hsl(0, 0%, 80%);
+}
+
+.nav-logo-container {
+  padding: 10px;
+  margin: 0 20px;
+  /* border: 1px solid white;
+  border-radius: 3px; */
+  color: white;
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: hsl(222, 20%, 25%);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+i {
+  color: white;
+}
+span {
+  padding-left: 5px;
+}
+
+.nav-vertical-line {
+  width: 2px;
+  background-color: white;
+  height: 100%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  background-color: hsl(222, 20%, 95%);
+  top: 100%;
+  left: 0px;
+  width: 150%;
+}
+
+li:hover .dropdown-menu {
+  display: block;
+}
+
+.menu-item {
+  height: 40px;
+  padding-left: 10px;
+  vertical-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2px 0px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  color: hsl(222, 20%, 25%);
+}
+
+.menu-item:hover {
+  background-color: hsl(222, 20%, 90%);
+}
+
+.div-box-container {
+  width: 95%;
+  display: flex;
+  margin: 50px auto;
+  max-width: 1000px;
+  height: 500px;
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(222, 20%, 25%);
+}
+
+.divBar {
+  background-color: hsl(222, 20%, 25%);
+  border: 1px white solid;
+}
